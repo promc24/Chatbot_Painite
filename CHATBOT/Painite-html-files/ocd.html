@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Self-assessment</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+    ul {
+        li: right;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: black;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .navbar-header > a {
+        color: black;
+        font-weight: bold;
+    }
+
+    .navbar {
+        margin:0;
+    }
+
+    .myRadio {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 5vh;
+    margin: 2vh;
+    font-weight: normal;
+    }
+
+    .myRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+
+    .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    }
+
+    .myRadio:hover input ~ .checkmark {
+    background-color: #ccc;
+    }
+
+    .myRadio input:checked ~ .checkmark {
+    background-color: #2196F3;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .myRadio input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    .question {
+        font-weight: bold;
+        background: #ECF0F1;
+        padding: 2vh;
+    }
+
+    #submit-button {
+        margin: 4vh auto 2vh auto;
+        padding: 2vh;
+        background-color: #2196F3;
+        text-align: center;
+        color: white;
+        display: block;
+        width: 20vw;
+        opacity: 0.9;
+        border: none;
+    }
+
+
+    #submit-button:hover {
+          opacity:1;
+        }
+
+    #result {
+      display: none;
+      background: #ECF0F1;
+      padding: 3vh;
+      border-radius: 10px;
+
+    }
+
+    #consult-button {
+        margin: 4vh auto 2vh auto;
+        padding: 2vh;
+        background-color: #2196F3;
+        text-align: center;
+        color: white;
+        display: block;
+        width: 20vw;
+        opacity: 0.9;
+        border: none;
+    }
+
+
+    #consult-button:hover {
+          opacity:1;
+        }
+
+    @media screen and (max-width: 700px) {
+      #consult-button {
+          width: 50vw;
+      }
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="#">PAINITE</a>
+                <img src="/logo.png" ALIGN="justify"/>
+                <img src="/icon.png" ALIGN="left" />
+                </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="https://painite.neocities.org/Home.html">Home</a></li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class = "container">
+        <h1 style="text-align: center;">Self-Assessment for OCD</h1>
+        <p style="text-align: justify;"> Painite is using the Yale-Brown Obsessive Compulsive Test,which will collect the scores of your answers to assess the severity and different symptoms in people with OCD. </p>      
+        <section id = "test" style="padding-top: 3vh">
+                <div id = "q1">
+                    <p class = "question">1. How much do your obsessive thoughts interfere with functioning in your social, work, or other roles?</p>
+                    <label class = "myRadio">None
+                        <input type="radio" value="0"  name="q1">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Less than 1 hour per day
+                        <input type="radio" value="1" name="q1">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">1-3 hours per day
+                        <input type="radio" value="2" name="q1">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">3-8 hours per day
+                        <input type="radio" value="3" name="q1">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">More than 8 hours per day
+                        <input type="radio" value="4" name="q1">
+                            <span class="checkmark"></span>
+                            </label>
+                </div>
+                
+                <div id = "q2">
+                    <p class = "question">2. How much do your obsessive thoughts interfere with functioning in your social, work, or other roles?</p>
+                    <label class = "myRadio">None
+                        <input type="radio" value="0"  name="q2">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Slight interference, but no impairment
+                        <input type="radio" value="1" name="q2">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Definite interference, but managable
+                        <input type="radio" value="2" name="q2">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Substantial intereference
+                        <input type="radio" value="3" name="q2">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Extreme intereference, incapacitating
+                        <input type="radio" value="4" name="q2">
+                            <span class="checkmark"></span>
+                            </label>
+                </div>
+                
+                <div id = "q3">
+                    <p class = "question">3. How much distress do your obsessive thoughts cause you?</p>
+                    <label class = "myRadio">None
+                        <input type="radio" value="0"  name="q3">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Mild, not too disturbing
+                        <input type="radio" value="1" name="q3">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Moderate, disturbing, but still manageable
+                        <input type="radio" value="2" name="q3">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio"> Severe, very disturbing
+                        <input type="radio" value="3" name="q3">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Extreme, near constant and disabling distress
+                        <input type="radio" value="4" name="q3">
+                            <span class="checkmark"></span>
+                            </label>
+                </div>
+                
+                <div id = "q4">
+                    <p class = "question">4. How much of an effort do you make to resist the obsessive thoughts?</p>
+                    <label class = "myRadio">Always make an effort to resist, or don’t even need to resist
+                        <input type="radio" value="0"  name="q4">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Try to resist most of the time
+                        <input type="radio" value="1" name="q4">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Make some effort to resist
+                        <input type="radio" value="2" name="q4">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Reluctantly yield to all obsessive thoughts
+                        <input type="radio" value="3" name="q4">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Completely and willingly yield to all obsessions
+                        <input type="radio" value="4" name="q4">
+                            <span class="checkmark"></span>
+                            </label>
+                </div>
+                
+                <div id = "q5">
+                    <p class = "question">5. How much control do you have over your obsessive thoughts?</p>
+                    <label class = "myRadio">Complete control
+                        <input type="radio" value="0"  name="q5">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Much control, usually able to stop or divert obsessions with some effort and concentration
+                        <input type="radio" value="1" name="q5">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Moderate control, sometimes able to stop or divert obsessions
+                        <input type="radio" value="2" name="q5">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio"> Little control, rarely successful in stopping or dismissing obsessions
+                        <input type="radio" value="3" name="q5">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">No control, rarely able to even momentarily alter obsessive thinking
+                        <input type="radio" value="4" name="q5">
+                            <span class="checkmark"></span>
+                            </label>
+                </div>
+                
+                <div id = "q6">
+                    <p class = "question">6. How much time do you spend performing compulsive behaviors?</p>
+                    <label class = "myRadio">None
+                        <input type="radio" value="0"  name="q6">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Less than 1 hour per day
+                        <input type="radio" value="1" name="q6">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">1-3 hours per day
+                        <input type="radio" value="2" name="q6">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">3-8 hours per day
+                        <input type="radio" value="3" name="q6">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">More than 8 hours per day
+                        <input type="radio" value="4" name="q6">
+                            <span class="checkmark"></span>
+                            </label>
+                </div>
+                
+                <div id = "q7">
+                    <p class = "question">7. How much do your compulsive behaviors interfere with functioning in your social, work, or other roles?</p>
+                    <label class = "myRadio">None
+                        <input type="radio" value="0"  name="q7">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Slight interference, but no impairment
+                        <input type="radio" value="1" name="q7">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Definite interference, but managable
+                        <input type="radio" value="2" name="q7">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Substantial intereference
+                        <input type="radio" value="3" name="q7">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Extreme intereference, incapacitating
+                        <input type="radio" value="4" name="q7">
+                            <span class="checkmark"></span>
+                            </label>
+                </div>
+                
+                <div id = "q8">
+                    <p class = "question">8. How anxious would you become if you were prevented from performing your compulsive behaviors?</p>
+                    <label class = "myRadio">No anxiety
+                        <input type="radio" value="0"  name="q8">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Only slightly anxious
+                        <input type="radio" value="1" name="q8">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Some anxiety, but managable
+                        <input type="radio" value="2" name="q8">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Prominent and disturbing anxiety
+                        <input type="radio" value="3" name="q8">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Extreme, incapacitating anxiety
+                        <input type="radio" value="4" name="q8">
+                            <span class="checkmark"></span>
+                            </label>
+                </div>
+                
+                <div id = "q9">
+                    <p class = "question">9. How much of an effort do you make to resist the compulsions?</p>
+                    <label class = "myRadio">Always make an effort to resist, or don’t even need to resist
+                        <input type="radio" value="0"  name="q9">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Try to resist most of the time
+                        <input type="radio" value="1" name="q9">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Make some effort to resist
+                        <input type="radio" value="2" name="q9">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Reluctantly yield to all complusions
+                        <input type="radio" value="3" name="q9">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Completely and willingly yield to all complusions
+                        <input type="radio" value="4" name="q9">
+                            <span class="checkmark"></span>
+                            </label>
+                </div>
+                
+                <div id = "q10">
+                    <p class = "question">10. How much control do you have over the compulsions?</p>
+                    <label class = "myRadio">Complete control
+                        <input type="radio" value="0"  name="q10">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Much control, usually able to stop or divert compulsive behavior with some effort and concentration
+                        <input type="radio" value="1" name="q10">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Moderate control, sometimes able to stop or divert compulsive behavior
+                        <input type="radio" value="2" name="q10">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">Little control, rarely successful in stopping or dismissing compulsive behavior
+                        <input type="radio" value="3" name="q10">
+                            <span class="checkmark"></span>
+                            </label>
+                    <label class = "myRadio">No control, rarely able to even momentarily alter compulsive behavior
+                        <input type="radio" value="4" name="q10">
+                            <span class="checkmark"></span>
+                            </label>
+                </div>
+                
+            <div>
+              <input type = "submit" value = "Submit" id = "submit-button" onclick = "calculate()">
+            </div>
+        </section>
+        <section id = "result">
+          <h3 id = "result-type" style="text-align: center;"></h3>
+          <p style="text-align: justify;">This scale is not designed to make a diagnosis of OCD or take the place of a professional diagnosis. \n If you suspect that you suffer from the symptoms, please consult a mental health professional as soon as possible.</p>
+          <div>
+              <input type = "button" value = "Consult a psychiatrist" id = "consult-button">
+          </div>
+        </section>
+        
+        <script type="text/javascript">
+            function calculate()
+            {
+              var ans_array = [];
+              var i = 1;
+              var ans = 0;
+              var count=0;
+
+              for(i = 1; i <= 10; i++)
+              {
+                var q = document.getElementsByName("q"+i.toString());
+                var j = 0;
+                for(j = 0; j < 5; j++)
+                {
+                    if(q[j].checked)
+                    {
+                      count++;
+                      ans_array[i-1] = q[j].value;
+                      ans += parseInt(q[j].value);
+                    }
+                }
+              }
+              
+              if(count!=10)
+              {
+                alert("Please answer all questions.");
+                return false;
+              }
+
+              console.log(ans);
+
+              // var modalresult = document.getElementById("resultModal");
+              // modalresult.style.display = "block";
+              // document.getElementsByTagName("body")[0].style.background = "blue";
+
+              var diag;
+
+              if(ans <=7) diag = "Likely to be subclinical"
+              else if(ans <= 15&&ans>=8) diag = "Likely to have a mild case of OCD"
+              else if(ans<= 23&&ans>=16)  diag = "Likely to have a moderate case of OCD"
+              else if(ans <= 31&& ans>=24) diag = "Likely to have a severe case of OCD"
+              else if(ans <= 40&& ans>=32) diag = "Likely to have a extreme case of OCD"
+              
+              document.getElementById("test").style.display = "none";
+              document.getElementById("result-type").innerHTML = diag;
+              document.getElementById("result").style.display = "block";
+
+
+
+            }
+
+        </script>
+    </div>
+</body>
+</html>

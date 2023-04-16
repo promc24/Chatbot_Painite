@@ -1,0 +1,3 @@
+'''Contains the email given by the user. Will be overwritten every time'''
+
+alid12@uni.coventry.ac.uk

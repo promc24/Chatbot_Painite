@@ -1,0 +1,184 @@
+Bath 
+Birmingham 
+Bradford 
+Brighton and Hove 
+Bristol 
+Cambridge 
+Canterbury 
+Carlisle 
+Chester 
+Chichester 
+Coventry 
+Derby 
+Durham 
+Ely 
+Exeter 
+Gloucester 
+Hereford 
+Kingston upon Hull 
+Lancaster 
+Leeds 
+Leicester 
+Lichfield 
+Lincoln 
+Liverpool 
+City of London 
+Manchester 
+Newcastle upon Tyne 
+Norwich 
+Nottingham 
+Oxford 
+Peterborough 
+Plymouth 
+Portsmouth 
+Preston 
+Ripon 
+Salford 
+Salisbury 
+Sheffield 
+Southampton 
+St Albans 
+Stoke-on-Trent 
+Sunderland 
+Truro 
+Wakefield 
+Wells 
+Westminster 
+Winchester 
+Wolverhampton 
+Worcester 
+York
+Bangor 
+Cardiff 
+Newport 
+St Davids 
+Swansea
+Aberdeen 
+Dundee 
+Edinburgh 
+Glasgow 
+Inverness 
+Stirling
+bath 
+birmingham 
+bradford 
+brighton and hove 
+bristol 
+cambridge 
+canterbury 
+carlisle 
+chester 
+chichester 
+coventry 
+derby 
+durham 
+ely 
+exeter 
+gloucester 
+hereford 
+kingston upon hull 
+lancaster 
+leeds 
+leicester 
+lichfield 
+lincoln 
+liverpool 
+city of london 
+manchester 
+newcastle upon tyne 
+norwich 
+nottingham 
+oxford 
+peterborough 
+plymouth 
+portsmouth 
+preston 
+ripon 
+salford 
+salisbury 
+sheffield 
+southampton 
+st albans 
+stoke-on-trent 
+sunderland 
+truro 
+wakefield 
+wells 
+westminster 
+winchester 
+wolverhampton 
+worcester 
+york
+bangor 
+cardiff 
+newport 
+st davids 
+swansea
+aberdeen 
+dundee 
+edinburgh 
+glasgow 
+inverness 
+stirling
+BATH 
+BIRMINGHAM 
+BRADFORD 
+BRIGHTON AND HOVE 
+BRISTOL 
+CAMBRIDGE 
+CANTERBURY 
+CARLISLE 
+CHESTER 
+CHICHESTER 
+COVENTRY 
+DERBY 
+DURHAM 
+ELY 
+EXETER 
+GLOUCESTER 
+HEREFORD 
+KINGSTON UPON HULL 
+LANCASTER 
+LEEDS 
+LEICESTER 
+LICHFIELD 
+LINCOLN 
+LIVERPOOL 
+CITY OF LONDON 
+MANCHESTER 
+NEWCASTLE UPON TYNE 
+NORWICH 
+NOTTINGHAM 
+OXFORD 
+PETERBOROUGH 
+PLYMOUTH 
+PORTSMOUTH 
+PRESTON 
+RIPON 
+SALFORD 
+SALISBURY 
+SHEFFIELD 
+SOUTHAMPTON 
+ST ALBANS 
+STOKE-ON-TRENT 
+SUNDERLAND 
+TRURO 
+WAKEFIELD 
+WELLS 
+WESTMINSTER 
+WINCHESTER 
+WOLVERHAMPTON 
+WORCESTER 
+YORK
+BANGOR 
+CARDIFF 
+NEWPORT 
+ST DAVIDS 
+SWANSEA
+ABERDEEN 
+DUNDEE 
+EDINBURGH 
+GLASGOW 
+INVERNESS 
+STIRLING
+
